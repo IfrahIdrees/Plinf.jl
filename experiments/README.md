@@ -65,3 +65,47 @@ run_domain_experiments(EXPERIMENTS_PATH, "doors-keys-gems", "suboptimal", :prp)
 run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :prp)
 run_domain_experiments(EXPERIMENTS_PATH, "intrusion-detection", "suboptimal", :prp)
 ```
+
+
+How to run:
+cd Plinf.jl
+julia (this will take you inside julia environment)
+
+Next setup the julia environment:
+julia> ]
+(@v1.8) pkg> activate . (activate environment)
+  Activating project at `~/research_projects/plinf/Plinf.jl`
+
+(Plinf) pkg> instantiate (installs dependencies and makes the environment ready)
+
+To return to the julia> prompt, either press backspace when the input line is empty or press Ctrl+C.
+
+Next run the script:
+julia> include("experiments/experiments.jl")
+analyze_domain_results
+
+if needed add julia package using the following command (add Example@1.2):
+
+(Plinf) pkg > add Example@1.2
+
+How to run without 
+ julia --project=@. experiments/experiments.jl
+
+init_state is problem 0, true goal is 0, optimal trajectory
+ block-words_problem_0_goal0.csv (optimal) (Single goal, correct steps)
+
+ init_state is problem 0, true goal is 0, suboptimal trajectory
+ block-words_problem_0_goal0_1.csv (sub-optimal) (single goal, suboptimal steps)
+ block-words_problem_0_goal0_2.csv (sub-optimal)
+
+ goal 0-5 (single goal)
+ goal 5-10 (multiple goals)
+
+ sensor_reliability 0.25
+ single goals, correct step - block-words_problem_0_goalx.csv
+ single goals, wrong step - block-words_problem_0_goalx_y.csv
+ 
+ Todo:
+ [ifrah] 
+  multiple goal, 
+  [done] different sensor_reliability - PID: 27666

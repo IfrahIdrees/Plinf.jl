@@ -1,0 +1,3198 @@
+
+signal (2): Interrupt
+in expression starting at /home/ifrah/research_projects/plinf/Plinf.jl/experiments/experiments.jl:621
+gc_page_data at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gc.h:397 [inlined]
+jl_gc_pool_alloc_inner at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gc.c:1257 [inlined]
+jl_gc_pool_alloc_noinline at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gc.c:1306 [inlined]
+jl_gc_alloc_ at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/julia_internal.h:369 [inlined]
+jl_gc_alloc at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gc.c:3371
+jl_f_tuple at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/builtins.c:835 [inlined]
+jl_f_tuple at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/builtins.c:825
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+jl_apply at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/julia.h:1838 [inlined]
+do_apply at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/builtins.c:730
+_totuple at ./tuple.jl:352 [inlined]
+Tuple at ./tuple.jl:317 [inlined]
+hash at /home/ifrah/.julia/packages/Julog/pgKEW/src/structs.jl:74
+hash at ./hashing.jl:20
+unknown function (ip: 0x7fe32318dbbd)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+hash at ./set.jl:470
+hash at /home/ifrah/.julia/packages/PDDL/eCv9B/src/states.jl:69
+hash at ./hashing.jl:20 [inlined]
+#available#128 at /home/ifrah/.julia/packages/PDDL/eCv9B/src/actions.jl:54
+available at /home/ifrah/.julia/packages/PDDL/eCv9B/src/actions.jl:49 [inlined]
+##aprob_call#355 at /home/ifrah/research_projects/plinf/Plinf.jl/src/planners/astar.jl:118
+unknown function (ip: 0x7fe32318db38)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+exec at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/dynamic.jl:54
+splice at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:76
+unknown function (ip: 0x7fe32318521f)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+##sample_plan#335 at /home/ifrah/research_projects/plinf/Plinf.jl/src/planners/planners.jl:48
+unknown function (ip: 0x7fe3231850c8)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+exec at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/dynamic.jl:54
+generate at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:84 [inlined]
+traceat at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:58
+unknown function (ip: 0x7fe323184df4)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+##replan_step#343 at /home/ifrah/research_projects/plinf/Plinf.jl/src/planners/replanners.jl:91
+unknown function (ip: 0x7fe323181e65)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+exec at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/dynamic.jl:54
+generate at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:84 [inlined]
+traceat at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:58
+unknown function (ip: 0x7fe3231810a4)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+##world_step#379 at /home/ifrah/research_projects/plinf/Plinf.jl/src/worlds.jl:80
+unknown function (ip: 0x7fe32316f692)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+exec at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/dynamic.jl:54
+generate at /home/ifrah/.julia/packages/Gen/5JiNL/src/dynamic/generate.jl:84
+unknown function (ip: 0x7fe32316ed5d)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+process_new! at /home/ifrah/.julia/packages/Gen/5JiNL/src/modeling_library/unfold/update.jl:65
+process_all_new! at /home/ifrah/.julia/packages/Gen/5JiNL/src/modeling_library/unfold/generic_update.jl:58
+unknown function (ip: 0x7fe32316e091)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+update at /home/ifrah/.julia/packages/Gen/5JiNL/src/modeling_library/unfold/update.jl:103
+unknown function (ip: 0x7fe32316aeed)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+macro expansion at /home/ifrah/.julia/packages/Gen/5JiNL/src/static_ir/update.jl:560 [inlined]
+update at /home/ifrah/.julia/packages/Gen/5JiNL/src/static_ir/update.jl:560
+unknown function (ip: 0x7fe323168b1c)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+macro expansion at /home/ifrah/.julia/packages/Gen/5JiNL/src/static_ir/update.jl:474 [inlined]
+update at /home/ifrah/.julia/packages/Gen/5JiNL/src/static_ir/update.jl:560
+pf_update! at /home/ifrah/.julia/packages/GenParticleFilters/Vw90d/src/update.jl:16
+unknown function (ip: 0x7fe32315e281)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+#world_particle_filter#162 at /home/ifrah/research_projects/plinf/Plinf.jl/src/inference/inference.jl:94
+world_particle_filter##kw at /home/ifrah/research_projects/plinf/Plinf.jl/src/inference/inference.jl:55
+unknown function (ip: 0x7fe32313b73d)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+#45 at /home/ifrah/research_projects/plinf/Plinf.jl/experiments/experiments.jl:304
+unknown function (ip: 0x7fe323135a9f)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+with_logstate at ./logging.jl:511
+with_logger at ./logging.jl:623 [inlined]
+run_sips_inference at /home/ifrah/research_projects/plinf/Plinf.jl/experiments/experiments.jl:303
+unknown function (ip: 0x7fe323133555)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+run_problem_experiments at /home/ifrah/research_projects/plinf/Plinf.jl/experiments/experiments.jl:393
+run_domain_experiments at /home/ifrah/research_projects/plinf/Plinf.jl/experiments/experiments.jl:572
+unknown function (ip: 0x7fe32502ce45)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+jl_apply at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/julia.h:1838 [inlined]
+do_call at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/interpreter.c:126
+eval_value at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/interpreter.c:215
+eval_stmt_value at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/interpreter.c:166 [inlined]
+eval_body at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/interpreter.c:612
+jl_interpret_toplevel_thunk at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/interpreter.c:750
+jl_toplevel_eval_flex at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/toplevel.c:906
+jl_toplevel_eval_flex at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/toplevel.c:850
+ijl_toplevel_eval_in at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/toplevel.c:965
+eval at ./boot.jl:368 [inlined]
+include_string at ./loading.jl:1428
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+_include at ./loading.jl:1488
+include at ./Base.jl:419
+jfptr_include_32221.clone_1 at /home/ifrah/research_projects/plinf/julia-1.8.1/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+exec_options at ./client.jl:303
+_start at ./client.jl:522
+jfptr__start_61720.clone_1 at /home/ifrah/research_projects/plinf/julia-1.8.1/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2367 [inlined]
+ijl_apply_generic at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/gf.c:2549
+jl_apply at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/julia.h:1838 [inlined]
+true_main at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/jlapi.c:575
+jl_repl_entrypoint at /cache/build/default-amdci5-0/julialang/julia-release-1-dot-8/src/jlapi.c:719
+main at julia (unknown line)
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x401098)
+unknown function (ip: (nil))
+Allocations: 877572584 (Pool: 877445724; Big: 126860); GC: 529
+./experiments/problems/block-words   ["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"][0, 1, 2]
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+./experiments/problems/block-words   ["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"][0, 1, 2]
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_2_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_2_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_2_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_2_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_2_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_2_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_2_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_2_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+domain summary function calledWriting domain summary results to block-words_summary.csv...
+./experiments/problems/block-words   ["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"][0, 1, 2]
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+Noise is through functionOBS_PARAM_IS
+Term[clear(p), on(a, d), on(d, o), on(c, o), clear(o), holding(d), on(e, p), on(e, e), on(o, c), on(w, w), ontable(w), on(r, o), ontable(d), ontable(a), on(d, p), on(r, c), ontable(p), on(r, e), on(d, a), on(c, p), on(p, r), on(a, c), on(a, p), on(w, c), on(e, o), on(p, p), on(e, c), on(a, o), on(a, w), on(e, r), on(w, o), on(d, e), holding(e), on(o, o), on(c, w), on(d, c), on(r, p), on(c, d), on(c, r), on(c, e), holding(r), on(p, d), clear(e), on(a, a), on(o, w), on(p, a), holding(w), on(e, w), on(w, r), clear(w), clear(c), holding(o), on(o, e), on(r, w), on(p, e), ontable(o), on(r, a), ontable(e), clear(r), on(o, r), on(e, d), on(r, d), on(o, a), on(p, w), on(w, e), ontable(c), holding(p), on(r, r), on(d, r), on(w, a), on(o, p), on(c, a), on(w, d), on(p, c), ontable(r), holding(c), clear(d), on(d, d), on(a, e), on(d, w), on(w, p), on(p, o), clear(a), on(e, a), on(a, r), holding(a), handempty, on(o, d), on(c, c)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(d), ontable(w), on(d, r), on(r, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(c), ontable(w), on(c, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, p), on(p, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(p), ontable(r), on(p, o), on(o, w), on(w, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(w), ontable(e), on(w, a), on(a, d), on(d, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_0_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Writing results to block-words_problem_1_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_1_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Writing results to block-words_problem_1_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Writing results to block-words_problem_1_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_1_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Writing results to block-words_problem_1_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Writing results to block-words_problem_1_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_1_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Writing results to block-words_problem_1_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 1...
+Noise is through functionOBS_PARAM_IS
+Term[on(c, h), on(a, h), on(h, s), on(r, u), ontable(h), on(s, s), on(t, c), clear(t), on(c, t), on(u, t), clear(u), on(r, s), on(u, r), clear(s), on(t, t), holding(t), on(k, h), ontable(a), on(r, c), on(k, u), holding(k), on(u, k), on(t, u), on(a, c), on(u, h), on(c, k), ontable(k), on(a, k), on(k, c), on(a, s), on(s, h), on(t, r), on(c, s), clear(h), on(h, t), on(u, u), on(s, u), on(h, a), on(c, r), ontable(t), holding(u), ontable(s), on(t, a), holding(r), on(s, r), on(u, a), on(k, k), on(t, k), on(t, s), on(a, a), holding(h), clear(c), on(h, h), on(u, s), on(k, t), on(r, k), on(r, a), on(t, h), clear(r), on(k, a), on(u, c), on(h, k), holding(s), on(r, h), on(s, a), ontable(c), on(r, r), on(c, a), clear(k), ontable(r), on(h, u), holding(c), on(c, u), on(s, k), on(k, s), on(s, c), on(h, c), on(k, r), on(h, r), on(s, t), clear(a), on(a, u), on(a, r), holding(a), handempty, on(r, t), on(a, t), ontable(u), on(c, c)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(h), on(t, r), on(r, a), on(a, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Writing results to block-words_problem_1_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_1_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(s), ontable(t), on(s, h), on(h, u), on(u, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Writing results to block-words_problem_1_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_1_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(c), ontable(h), on(c, r), on(r, u), on(u, s), on(s, h))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Writing results to block-words_problem_1_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(k), on(t, r), on(r, u), on(u, c), on(c, k))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_1_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(t), on(c, u), on(u, r), on(r, t))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_1_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_1_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Timestep 40
+Timestep 41
+Timestep 42
+Timestep 43
+Timestep 44
+Timestep 45
+Timestep 46
+Timestep 47
+Writing results to block-words_problem_2_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Timestep 40
+Timestep 41
+Timestep 42
+Timestep 43
+Timestep 44
+Timestep 45
+Timestep 46
+Timestep 47
+Writing results to block-words_problem_2_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Timestep 40
+Timestep 41
+Timestep 42
+Timestep 43
+Timestep 44
+Timestep 45
+Timestep 46
+Timestep 47
+Writing results to block-words_problem_2_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+Running experiments for problem 2...
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), clear(o), ontable(h), on(e, e), on(e, t), on(o, h), on(w, w), ontable(w), clear(t), on(r, o), on(t, o), on(t, t), holding(t), ontable(a), on(h, w), on(r, e), on(h, o), on(e, o), on(m, e), on(a, o), on(a, w), on(m, h), on(m, m), on(t, r), on(e, r), on(w, o), clear(h), on(h, t), on(w, t), holding(e), on(o, o), on(h, a), ontable(t), on(t, a), holding(r), on(t, m), on(m, o), clear(e), on(a, a), on(o, w), on(w, r), holding(w), on(e, w), holding(h), clear(w), holding(m), on(h, m), on(w, h), holding(o), on(h, h), on(o, e), on(m, a), on(t, e), on(r, w), ontable(m), on(a, m), ontable(o), on(r, a), on(o, m), on(t, h), ontable(e), clear(r), on(r, m), on(o, r), on(o, a), on(m, r), on(o, t), on(w, e), on(r, h), on(r, r), on(w, a), clear(m), ontable(r), on(m, t), on(t, w), on(h, e), on(w, m), on(e, m), on(a, e), on(m, w), on(h, r), clear(a), on(e, a), on(e, h), on(a, r), holding(a), handempty, on(r, t), on(a, t)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(m), ontable(r), on(m, o), on(o, t), on(t, h), on(h, e), on(e, r))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Timestep 22
+Timestep 23
+Timestep 24
+Timestep 25
+Timestep 26
+Timestep 27
+Timestep 28
+Timestep 29
+Timestep 30
+Timestep 31
+Timestep 32
+Timestep 33
+Timestep 34
+Timestep 35
+Timestep 36
+Timestep 37
+Timestep 38
+Timestep 39
+Timestep 40
+Timestep 41
+Timestep 42
+Timestep 43
+Timestep 44
+Timestep 45
+Timestep 46
+Timestep 47
+Writing results to block-words_problem_2_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, m), on(m, e))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Writing results to block-words_problem_2_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(t), ontable(o), on(t, w), on(w, o))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Writing results to block-words_problem_2_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, r), on(r, o), on(o, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+Writing results to block-words_problem_2_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Writing results to block-words_problem_2_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(t), ontable(w), on(t, h), on(h, a), on(a, w))
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Writing results to block-words_problem_2_goal4_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_2_summary.csv...
+domain summary function calledWriting domain summary results to block-words_summary.csv...

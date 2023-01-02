@@ -51,6 +51,18 @@ function load_observations(obs_path::String, problem_idx::Int,
     # Parse plans, produce trajectories from initial state + plans
     obs_plans = [parse_pddl.(readlines(joinpath(obs_path, fn)))
                  for fn in plan_fns]
+    # println(obs_plans)
+    # println("state", init_state)
+    # println("observation", p)
+    "Trying"
+    # for p in obs_plans
+    #     # print(p[1:2])
+    #     # plan = @pddl(String(p) for p in p[1:2])
+    #     end_state = PDDL.simulate(domain, init_state, p)
+    #     print("\nLENGTH: ",length(end_state), "\n")
+    #     print(PDDL.get_facts(end_state[4]))
+    # end
+    
     obs_trajs = [PDDL.simulate(domain, init_state, p) for p in obs_plans]
 
     return obs_plans, obs_trajs, plan_fns
@@ -86,14 +98,21 @@ function generate_observations(path, domain_name::String, problem_idx::Int,
     end
     # Generate n_obs plans for each goal
     println("Generating $n_obs plans per goal for problem $(problem_idx)...")
+    chosen_goals = [6]
     for (i, goal) in enumerate(goals)
+        if !(i in chosen_goals)
+            print("\n ignoring goal", i)
+            continue
+        end
         goal = GoalSpec(goal)
+        print(goal)
         for j in 1:n_obs
             plan, _ = planner(domain, init_state, goal)
             filter!(a -> a !=  pddl"(--)", plan) # Filter out no-ops
             plan = write_pddl.(plan) # Convert actions to PDDL strings
             # Write plan to file
             obs_fn = "$(domain_name)_problem_$(problem_idx)_goal$(i-1)_$(j-1).dat"
+            print("Writing to", joinpath(obs_path, obs_fn))
             open(joinpath(obs_path, obs_fn), "w") do f
                 for act in plan println(f, act) end
             end
@@ -101,6 +120,7 @@ function generate_observations(path, domain_name::String, problem_idx::Int,
     end
     return obs_path
 end
+
 
 "Generate a dataset of observations for the given domain / problem."
 function generate_observations(path, domain_name::String, optimal::Bool=false,
@@ -120,8 +140,9 @@ end
 ## Modeling and inference methods ##
 
 "Set-up goal prior, agent model, and world model."
-function setup_model(domain::Domain, init_state::State, goals)
+function setup_model(domain::Domain, init_state::State, goals, sensor_noise)
     # Construct uniform prior over goals
+    # sensor_noise = 0.25
     n_goals = length(goals)
     @gen goal_prior() =
         GoalSpec(goals[@trace(uniform_discrete(1, n_goals), :goal)])
@@ -131,7 +152,8 @@ function setup_model(domain::Domain, init_state::State, goals)
         obs_params = OBS_PARAMS[string(domain.name)]
         obs_params = Plinf.ground_obs_params(obs_params, init_state, domain)
     else
-        obs_params = observe_params(domain, pred_noise=0.05; state=init_state)
+        print("Noise is through function")
+        obs_params = observe_params(domain, pred_noise=sensor_noise , func_noise=sensor_noise, state=init_state)
     end
     obs_terms = collect(keys(obs_params))
 
@@ -345,12 +367,12 @@ function test_problem(path, domain_name, problem_idx, goal_idx=0)
 end
 
 "Run experiments for a given problem (i.e. initial state) in a domain."
-function run_problem_experiments(path, domain_name, problem_idx,
+function run_problem_experiments(path, domain_name, problem_idx, sensor_noise,
                                  obs_subdir="optimal", method=:sips)
     # Load domain, problem, and set of goals
     domain, problem, goals = load_problem_files(path, domain_name, problem_idx)
     init_state = initialize(problem)
-
+    # println("init_state",init_state)
     # Load dataset of observed trajectories for the current problem
     obs_path = joinpath(path, "observations", obs_subdir, domain_name)
     _, obs_trajs, obs_fns = load_observations(obs_path, problem_idx,
@@ -359,7 +381,9 @@ function run_problem_experiments(path, domain_name, problem_idx,
     # Perform method specific setup
     if method == :sips
         obs_terms, world_init, world_config =
-            setup_model(domain, init_state, goals)
+            setup_model(domain, init_state, goals,sensor_noise)
+        # print("world_init", world_init)
+
     elseif method == :prp
         # error("Not implemented.")
     elseif method == :rnn
@@ -367,12 +391,20 @@ function run_problem_experiments(path, domain_name, problem_idx,
     end
 
     # Run goal inference for each trajectory
-    results_path = mkpath(joinpath(path, "results", domain_name))
+    sr = 1-sensor_noise
+    results_path = mkpath(joinpath(path, "results", domain_name*"-"*string(sr)))
+    print("OBS_PARAM_IS\n",obs_terms,"Results path\n", results_path )
     problem_dfs = DataFrame[]
     for (idx, (traj, fn)) in enumerate(zip(obs_trajs, obs_fns))
         # Get goal index from file name
         goal_idx = parse(Int, match(r".*_goal(\d+).*", fn).captures[1])
+        # if !(goal_idx in [4,5])
+        #     print("ignore", goal_idx)
+        #     continue
+        # end
         goal = goals[goal_idx+1]
+        # println(goal)
+        # exit()
         idx = idx - 1 # Reindex trajectories to start at zero
         println("Inferring goals for trajectory $idx, goal $goal_idx...")
         println("True goal: $goal")
@@ -394,13 +426,17 @@ function run_problem_experiments(path, domain_name, problem_idx,
         df_path = joinpath(results_path, df_fn)
         println("Writing results to $df_fn...")
         CSV.write(df_path, df)
+        # if idx == 1
+            # exit()
+        # end
    end
 
    # Summarize and save results
    summary_df = analyze_problem_results(problem_dfs)
    df_fn = "$(domain_name)_problem_$(problem_idx)_summary.csv"
-   df_path = joinpath(path, "results", domain_name, df_fn)
-   println("Writing summary results to $df_fn...")
+   df_path = joinpath(results_path, df_fn)
+#    df_path = joinpath(path, "results", domain_name, df_fn)
+   println("Writing summary results to $df_fn...") ## per init state
    CSV.write(df_path, summary_df)
 
    return problem_dfs, summary_df
@@ -419,6 +455,7 @@ end
 
 "Compute summary statistics for a particular problem."
 function analyze_problem_results(problem_dfs::Vector{DataFrame})
+    println("summary results with dataframe input 1")
     summary_df = DataFrame(
         q1_true_goal_prob = Float64[],
         mid_true_goal_prob = Float64[],
@@ -447,6 +484,11 @@ function analyze_problem_results(problem_dfs::Vector{DataFrame})
         mid_true_goal_prob = df.true_goal_probs[mid]
         q3_true_goal_prob = df.true_goal_probs[q3]
         end_true_goal_prob = df.true_goal_probs[end]
+        ## fraction of time accurate
+        # q1_is_top_ranked = findmax(eachcol(df[:,5:end]))
+        # argmax(df[:,5:end])
+        # print(q1_is_top_ranked)
+        # quit()
         q1_is_top_ranked = q1_true_goal_prob >=
             maximum(df[q1, ["goal_probs_$i" for i in 0:(n_goals-1)]])
         mid_is_top_ranked = mid_true_goal_prob >=
@@ -476,10 +518,52 @@ function analyze_problem_results(problem_dfs::Vector{DataFrame})
              marginal_states_visited, average_states_visited,
              total_dur, initial_dur, marginal_dur, average_dur])
     end
+
+    ### orginal ## 
+    # for df in problem_dfs
+    #     n_goals = parse(Int, match(r".*_(\d+)", names(df)[end]).captures[1]) + 1
+    #     q1 = Int(floor(size(df, 1) * 1/4))
+    #     mid = (size(df, 1) + 1) ÷ 2
+    #     q3 = Int(floor(size(df, 1) * 3/4))
+
+    #     q1_true_goal_prob = df.true_goal_probs[q1]
+    #     mid_true_goal_prob = df.true_goal_probs[mid]
+    #     q3_true_goal_prob = df.true_goal_probs[q3]
+    #     end_true_goal_prob = df.true_goal_probs[end]
+    #     q1_is_top_ranked = q1_true_goal_prob >=
+    #         maximum(df[q1, ["goal_probs_$i" for i in 0:(n_goals-1)]])
+    #     mid_is_top_ranked = mid_true_goal_prob >=
+    #         maximum(df[mid, ["goal_probs_$i" for i in 0:(n_goals-1)]])
+    #     q3_is_top_ranked = q3_true_goal_prob >=
+    #         maximum(df[q3, ["goal_probs_$i" for i in 0:(n_goals-1)]])
+    #     end_is_top_ranked = end_true_goal_prob >=
+    #         maximum(df[end, ["goal_probs_$i" for i in 0:(n_goals-1)]])
+
+    #     total_states_visited = sum(df.states_visited)
+    #     initial_states_visited = df.states_visited[1]
+    #     marginal_states_visited =
+    #         (total_states_visited - initial_states_visited) / (size(df, 1) - 1)
+    #     average_states_visited = total_states_visited / size(df, 1)
+
+    #     total_dur = sum(df.step_durs)
+    #     initial_dur = df.step_durs[1]
+    #     marginal_dur = (total_dur - initial_dur) / (size(df, 1) - 1)
+    #     average_dur = total_dur / size(df, 1)
+
+    #     push!(summary_df,
+    #         [q1_true_goal_prob, mid_true_goal_prob,
+    #          q3_true_goal_prob, end_true_goal_prob,
+    #          q1_is_top_ranked, mid_is_top_ranked,
+    #          q3_is_top_ranked, end_is_top_ranked,
+    #          total_states_visited, initial_states_visited,
+    #          marginal_states_visited, average_states_visited,
+    #          total_dur, initial_dur, marginal_dur, average_dur])
+    # end
     return summary_df
 end
 
 function analyze_problem_results(path, domain_name, problem_idx, save=false)
+    
     dfs = load_problem_results(path, domain_name, problem_idx)
     summary_df = analyze_problem_results(dfs)
     if save
@@ -501,22 +585,34 @@ function run_domain_experiments(path, domain_name, obs_subdir="optimal",
                          readdir(joinpath(path, "problems", domain_name)))
     problem_idxs = [parse(Int, match(r".*problem_(\d+).pddl", fn).captures[1])
                     for fn in problem_fns]
-
+    println(joinpath(path, "problems", domain_name), "   ", problem_fns, problem_idxs)
     # Run experiments for each problem
     domain_dfs = []
     summary_df = DataFrame()
+    sensor_noises = [0.01, 0.05, 0.1, 0.2]
+    chosen_problem_idxs = [0]
     for idx in problem_idxs
-        println("Running experiments for problem $idx...")
-        dfs, s_df = run_problem_experiments(path, domain_name, idx,
-                                            obs_subdir, method)
-        append!(summary_df, s_df)
-        push!(domain_dfs, dfs)
+        if !(idx in chosen_problem_idxs)
+            print("ignoring problem", idx, "\n")
+            continue
+        end
+        for sn in sensor_noises
+            println("Running experiments for problem $idx...")
+            dfs, s_df = run_problem_experiments(path, domain_name, idx, sn,
+                                                obs_subdir, method)
+            if (idx in chosen_problem_idxs)
+                append!(summary_df, s_df)
+                push!(domain_dfs, dfs)
+            end
+            
+        end
     end
 
     # Compute and save summary statistics
     summary_stats = analyze_domain_results(summary_df)
     df_fn = "$(domain_name)_summary.csv"
-    df_path = joinpath(path, "results", domain_name, df_fn)
+    df_path = joinpath(path, "results", df_fn)
+    # df_path = joinpath(path, "results", domain_name, df_fn)
     println("Writing domain summary results to $df_fn...")
     CSV.write(df_path, summary_stats)
 
@@ -536,6 +632,7 @@ end
 
 "Compute summary statistics for a given domain."
 function analyze_domain_results(summary_df::DataFrame)
+    print("domain summary function called")
     return describe(summary_df, :mean, :std, :min, :max, :median)
 end
 
@@ -552,3 +649,7 @@ function analyze_domain_results(path, domain_name, save=false)
     end
     return stats_df
 end
+
+# generate_observations(EXPERIMENTS_PATH, "block-words")
+run_domain_experiments(EXPERIMENTS_PATH, "block-words", "optimal", :sips)
+run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)

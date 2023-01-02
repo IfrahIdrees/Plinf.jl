@@ -22,3 +22,22 @@ docs/site/
 # committed for packages, but should be committed for applications that require a static
 # environment.
 Manifest.toml
+experiments/results/block-words/*.csv
+experiments/results/doors-keys-gems/*.csv
+experiments/results/intrusion-detection/*.csv
+experiments/results/taxi/*.csv
+experiments/observations/optimal/block-words-all/*
+experiments/observations/optimal/block-words-debug/*
+experiments/observations/optimal/htn-block-words/*
+experiments/observations/optimal-orignal/*
+experiments/observations/suboptimal-orignal/*
+experiments/problems/block-words-orignal/*
+experiments/problems/htn-block-words/*
+experiments/observations/optimal/toy/*
+experiments/problems/toy/*
+experiments/results/*
+experiments/goals/block-words-orignal/*
+experiments/goals/htn-block-words/*
+experiments/domains/htn-block-words.pddl
+experiments/domains/toy.pddl
+experiments/goals/toy/goals_*.pddl
