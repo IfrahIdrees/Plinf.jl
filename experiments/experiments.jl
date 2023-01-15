@@ -174,7 +174,12 @@ end
 "Extract goal probabilities from weighted traces."
 function get_goal_probs(traces, weights, goal_idxs=[])
     goal_probs = OrderedDict{Any,Float64}(g => 0.0 for g in goal_idxs)
+    index = 0 
     for (tr, w) in zip(traces, weights)
+        if index == 0
+            println("trace, weight is:", tr)
+            index+=1
+        end
         goal_idx = tr[:goal_init => :goal]
         prob = get(goal_probs, goal_idx, 0.0)
         goal_probs[goal_idx] = prob + exp(w)
@@ -314,6 +319,11 @@ function run_sips_inference(goal_idx, traj, goals, obs_terms,
 
     # Run a particle filter to perform online goal inference
     n_goals = length(goals)
+    n_goals = 5
+    # println("num goals are", length(goals))
+    # println("goals", goals)
+    # exit()
+
     n_samples = SAMPLE_MULT * n_goals
     goal_strata = Dict((:goal_init => :goal) => collect(1:n_goals))
     start_time = time()
@@ -403,7 +413,7 @@ function run_problem_experiments(path, domain_name, problem_idx, sensor_noise,
         #     continue
         # end
         goal = goals[goal_idx+1]
-        # println(goal)
+        # println("goal is", goal)
         # exit()
         idx = idx - 1 # Reindex trajectories to start at zero
         println("Inferring goals for trajectory $idx, goal $goal_idx...")
@@ -652,4 +662,4 @@ end
 
 # generate_observations(EXPERIMENTS_PATH, "block-words")
 run_domain_experiments(EXPERIMENTS_PATH, "block-words", "optimal", :sips)
-run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)
+# run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)
