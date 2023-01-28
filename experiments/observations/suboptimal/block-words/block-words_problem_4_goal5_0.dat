@@ -2,6 +2,8 @@
 (stack n e)
 (pick-up o)
 (stack o n)
+(pick-up r)
+(stack r o)
 (pick-up t)
 (stack t o)
 (pick-up w)

@@ -109,3 +109,58 @@ init_state is problem 0, true goal is 0, optimal trajectory
  [ifrah] 
   multiple goal, 
   [done] different sensor_reliability - PID: 27666
+
+no case 14,15,20,21,22
+18 - is 5_1
+19 is 5_0
+
+with mapping to current block, the suboptimal paths are: 
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal0_0.dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal1_0 .dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal4_0.dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal5_0.dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal5_1.dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal7_0.dat
+/home/ifrah/research_projects/plinf/Plinf.jl/experiments/observations/suboptimal/block-words/block-words_problem_0_goal7_1.dat
+
+Mapping
+sg/CS
+1 - Opt-Goal2
+2 - Opt-Goal1
+3 - Opt-Goal0
+4 - Opt-Goal3
+5 - Opt-Goal4
+
+MG/CS
+6 - Opt-Goal5
+//8 - Opt-Goal7
+9/10 - Opt-Goal8
+
+
+
+SG-WS
+11 - Sub-Opt-Goal0-0
+12 - Sub-Opt-Goal1-0
+13 - Sub-Opt-Goal4-0
+23 - Sub-Opt-Goal0-1
+24 - Sub-Opt-Goal1-1
+25 - Sub-Opt-Goal2-0
+26 - Sub-Opt-Goal2-1
+27 - Sub-Opt-Goal3-0
+28 - Sub-Opt-Goal3-1
+15 - Sub-Opt-Goal4-1
+
+MG/WS
+16 - Sub-Opt-Goal7-0
+17 - Sub-Opt-Goal7-1
+
+
+14 -  7 (instead of repeating stack and unstack?)
+18 - 7 (wrong step at different position before A))
+19 - 7 (wrong step at different position) before T)
+20- 5 with repeat W and T
+21 - 6 with repear H and R
+22 - 8 with repear wuth C and S
+// 15 - 4 (repeat capstone)
+
+Sub-Opt-Goal5-0/1 not correct

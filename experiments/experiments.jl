@@ -51,19 +51,20 @@ function load_observations(obs_path::String, problem_idx::Int,
     # Parse plans, produce trajectories from initial state + plans
     obs_plans = [parse_pddl.(readlines(joinpath(obs_path, fn)))
                  for fn in plan_fns]
-    # println(obs_plans)
+    println(obs_plans)
     # println("state", init_state)
     # println("observation", p)
-    "Trying"
-    # for p in obs_plans
-    #     # print(p[1:2])
-    #     # plan = @pddl(String(p) for p in p[1:2])
-    #     end_state = PDDL.simulate(domain, init_state, p)
-    #     print("\nLENGTH: ",length(end_state), "\n")
-    #     print(PDDL.get_facts(end_state[4]))
-    # end
+    # "Trying"
+    for p in obs_plans
+        # print(p[1:2])
+        # plan = @pddl(String(p) for p in p[1:2])
+        end_state = PDDL.simulate(domain, init_state, p)
+        print("\nLENGTH: ",length(end_state), "\n")
+        print(PDDL.get_facts(end_state[4]))
+    end
     
     obs_trajs = [PDDL.simulate(domain, init_state, p) for p in obs_plans]
+    # println(obs_trajs)
 
     return obs_plans, obs_trajs, plan_fns
 end
@@ -176,10 +177,10 @@ function get_goal_probs(traces, weights, goal_idxs=[])
     goal_probs = OrderedDict{Any,Float64}(g => 0.0 for g in goal_idxs)
     index = 0 
     for (tr, w) in zip(traces, weights)
-        if index == 0
-            println("trace, weight is:", tr)
-            index+=1
-        end
+        # if index == 0
+            # println("trace, weight is:", tr)
+            # index+=1
+        # end
         goal_idx = tr[:goal_init => :goal]
         prob = get(goal_probs, goal_idx, 0.0)
         goal_probs[goal_idx] = prob + exp(w)
@@ -319,7 +320,7 @@ function run_sips_inference(goal_idx, traj, goals, obs_terms,
 
     # Run a particle filter to perform online goal inference
     n_goals = length(goals)
-    n_goals = 5
+    # n_goals = 5
     # println("num goals are", length(goals))
     # println("goals", goals)
     # exit()
@@ -382,11 +383,12 @@ function run_problem_experiments(path, domain_name, problem_idx, sensor_noise,
     # Load domain, problem, and set of goals
     domain, problem, goals = load_problem_files(path, domain_name, problem_idx)
     init_state = initialize(problem)
-    # println("init_state",init_state)
+    println("init_state",init_state)
     # Load dataset of observed trajectories for the current problem
     obs_path = joinpath(path, "observations", obs_subdir, domain_name)
     _, obs_trajs, obs_fns = load_observations(obs_path, problem_idx,
                                               domain, init_state)
+    println("loaded observation")
 
     # Perform method specific setup
     if method == :sips
@@ -600,6 +602,7 @@ function run_domain_experiments(path, domain_name, obs_subdir="optimal",
     domain_dfs = []
     summary_df = DataFrame()
     sensor_noises = [0.01, 0.05, 0.1, 0.2]
+    # sensor_noises = [0.01, 0.05]
     chosen_problem_idxs = [0]
     for idx in problem_idxs
         if !(idx in chosen_problem_idxs)
@@ -661,5 +664,5 @@ function analyze_domain_results(path, domain_name, save=false)
 end
 
 # generate_observations(EXPERIMENTS_PATH, "block-words")
-run_domain_experiments(EXPERIMENTS_PATH, "block-words", "optimal", :sips)
-# run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)
+# run_domain_experiments(EXPERIMENTS_PATH, "block-words", "optimal", :sips)
+run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)

@@ -7,6 +7,8 @@
 (pick-up w)
 (stack w k)
 (pick-up a)
+(pick-up r)
+(stack r o)
 (stack a w)
 (pick-up h)
 (stack h a)

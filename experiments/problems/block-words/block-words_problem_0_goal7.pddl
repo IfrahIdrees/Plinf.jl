@@ -57,11 +57,6 @@
 	(ontable w)
 	(ontable k)
   )
-  (:goal (and 
-  (clear t) 
-  (ontable e) 
-  (on t u) 
-  (on u n) 
-  (on n e)))
+  (:goal (and (clear t) (ontable e) (on t u) (on u n) (on n e) (clear h) (ontable k) (on h a) (on a w) (on w k) )
 )
         
