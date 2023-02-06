@@ -44,6 +44,7 @@ end
 function load_observations(obs_path::String, problem_idx::Int,
                            domain::Domain, init_state::State)
     # Load and sort plans
+    println("here")
     filt_by_prob = fn -> occursin("problem_$(problem_idx)_", fn)
     plan_fns = filter!(filt_by_prob, readdir(obs_path))
     plan_fns = sort!(plan_fns; by=get_idx_from_fn)
@@ -55,13 +56,20 @@ function load_observations(obs_path::String, problem_idx::Int,
     # println("state", init_state)
     # println("observation", p)
     # "Trying"
-    for p in obs_plans
+        # inside for loop
         # print(p[1:2])
         # plan = @pddl(String(p) for p in p[1:2])
-        end_state = PDDL.simulate(domain, init_state, p)
-        print("\nLENGTH: ",length(end_state), "\n")
-        print(PDDL.get_facts(end_state[4]))
-    end
+        # plan = @pddl(String(p[1]))
+        # pddl"(ontable a)"
+
+        # println("observe", p)
+    # for p in obs_plans
+    #     end_state = PDDL.simulate(domain, init_state, [p[1]])
+    #     println(typeof(end_state))
+    #     print("\nLENGTH: ",length(end_state), "\n")
+    #     print(PDDL.get_facts(end_state[2])) ## index 2 shows endstate of action2 in observationfile.dat
+    # end
+
     
     obs_trajs = [PDDL.simulate(domain, init_state, p) for p in obs_plans]
     # println(obs_trajs)
@@ -286,6 +294,14 @@ function run_prp_inference(goal_idx, traj, goals, domain, beta=1)
     return df
 end
 
+# # function create_groundtruth(goal_idx)
+#     step_times = Float64[] 
+#     range(start, stop, length)
+#     if goal_idx == 5:
+#         for i in range(1,)
+#         end
+#     end 
+
 "Run goal inference via Sequential Inverse Plan Serach (SIPS) on a trajectory."
 function run_sips_inference(goal_idx, traj, goals, obs_terms,
                             world_init::WorldInit, world_config::WorldConfig)
@@ -320,19 +336,22 @@ function run_sips_inference(goal_idx, traj, goals, obs_terms,
 
     # Run a particle filter to perform online goal inference
     n_goals = length(goals)
-    # n_goals = 5
-    # println("num goals are", length(goals))
+    # n_goals = 6 (0 to 5 inclusive) ##blocks
+    n_goals = 5 ##blocks
+    println("num goals are", n_goals)
     # println("goals", goals)
     # exit()
 
     n_samples = SAMPLE_MULT * n_goals
     goal_strata = Dict((:goal_init => :goal) => collect(1:n_goals))
     start_time = time()
+    println("here in sips function")
     with_logger(logger) do
         traces, weights = world_particle_filter(
             world_init, world_config, traj, obs_terms, n_samples;
             resample=RESAMPLE, rejuvenate=rejuv_fns[REJUVENATE],
             callback=data_callback, strata=goal_strata)
+        println("here after particle filter")
     end
 
     # Process collected data
@@ -383,7 +402,11 @@ function run_problem_experiments(path, domain_name, problem_idx, sensor_noise,
     # Load domain, problem, and set of goals
     domain, problem, goals = load_problem_files(path, domain_name, problem_idx)
     init_state = initialize(problem)
-    println("init_state",init_state)
+    println("init_state ",typeof(init_state), init_state)
+    # println
+    # test_state = initstate(domain, problem)
+    println("facts in the init state are:", PDDL.get_facts(init_state))
+    # println("satisfy",  satisfy(domain, init_state, pddl"(dirty hand1)"))
     # Load dataset of observed trajectories for the current problem
     obs_path = joinpath(path, "observations", obs_subdir, domain_name)
     _, obs_trajs, obs_fns = load_observations(obs_path, problem_idx,
@@ -410,7 +433,7 @@ function run_problem_experiments(path, domain_name, problem_idx, sensor_noise,
     for (idx, (traj, fn)) in enumerate(zip(obs_trajs, obs_fns))
         # Get goal index from file name
         goal_idx = parse(Int, match(r".*_goal(\d+).*", fn).captures[1])
-        # if !(goal_idx in [4,5])
+        # if (goal_idx in [0,1,2,3,7])
         #     print("ignore", goal_idx)
         #     continue
         # end
@@ -491,7 +514,9 @@ function analyze_problem_results(problem_dfs::Vector{DataFrame})
         q1 = Int(floor(size(df, 1) * 1/4))
         mid = (size(df, 1) + 1) ÷ 2
         q3 = Int(floor(size(df, 1) * 3/4))
-
+        # println(df)
+        # println(q1, mid, q3)
+        # println(df.true_goal_probs[q1+1])
         q1_true_goal_prob = df.true_goal_probs[q1]
         mid_true_goal_prob = df.true_goal_probs[mid]
         q3_true_goal_prob = df.true_goal_probs[q3]
@@ -597,8 +622,12 @@ function run_domain_experiments(path, domain_name, obs_subdir="optimal",
                          readdir(joinpath(path, "problems", domain_name)))
     problem_idxs = [parse(Int, match(r".*problem_(\d+).pddl", fn).captures[1])
                     for fn in problem_fns]
+    println(problem_fns)
+    println(problem_idxs)
     println(joinpath(path, "problems", domain_name), "   ", problem_fns, problem_idxs)
     # Run experiments for each problem
+
+    println("here")
     domain_dfs = []
     summary_df = DataFrame()
     sensor_noises = [0.01, 0.05, 0.1, 0.2]
@@ -664,5 +693,6 @@ function analyze_domain_results(path, domain_name, save=false)
 end
 
 # generate_observations(EXPERIMENTS_PATH, "block-words")
+# run_domain_experiments(EXPERIMENTS_PATH, "kitchen", "optimal", :sips)
 # run_domain_experiments(EXPERIMENTS_PATH, "block-words", "optimal", :sips)
 run_domain_experiments(EXPERIMENTS_PATH, "block-words", "suboptimal", :sips)

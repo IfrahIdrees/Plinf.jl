@@ -151,6 +151,10 @@ SG-WS
 15 - Sub-Opt-Goal4-1
 
 MG/WS
+[new] _ - Sub-Opt-Goal5-0 #unstack and restack
+[new] _ - Sub-Opt-Goal5-1 #unstack and restack
+[new] _ - Sub-Opt-Goal6-0 #unstack and restack
+[new] _ - Sub-Opt-Goal6-1 #unstack and restack
 16 - Sub-Opt-Goal7-0
 17 - Sub-Opt-Goal7-1
 
@@ -164,3 +168,32 @@ MG/WS
 // 15 - 4 (repeat capstone)
 
 Sub-Opt-Goal5-0/1 not correct
+
+Todo: test suboptimal 6-0 and 6-1, 5-0 and 5-1,4-1
+
+
+Kitchen:
+htn Testcase - julia testcase
+
+optimal folder
+"Single Goal, Correct Steps": [1,2,3],
+"Multiple Goal, Correct Steps": [5,6],  # skip case 4
+
+---------------------------------------------
+
+"Single Goal, Wrong Steps": [7,8,9,10],
+"Multiple Goal, Wrong Steps": [11,12],
+optimal folder
+1 washhand - goal_0
+2 make tea - goal_1
+2 make coffee -goal_2
+5 - goal_3
+6   goal_4
+
+suboptimal
+7 -goal0_0
+8 -goal0_1
+9 - goal1_0
+10 - goal 1_1
+11 - goal 2_0
+12 - goal 2_1

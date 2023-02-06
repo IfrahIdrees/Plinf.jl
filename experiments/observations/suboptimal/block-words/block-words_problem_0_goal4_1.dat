@@ -8,6 +8,8 @@
 (stack t o)
 (pick-up s)
 (stack s t)
+(unstack s t)
+(stack s t)
 (pick-up p)
 (stack p s)
 (unstack p s)

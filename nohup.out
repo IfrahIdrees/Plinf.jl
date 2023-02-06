@@ -3196,3 +3196,2017 @@ Writing results to block-words_problem_2_goal4_1.csv...
 summary results with dataframe input 1
 Writing summary results to block-words_problem_2_summary.csv...
 domain summary function calledWriting domain summary results to block-words_summary.csv...
+["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"]
+[0, 1, 2]
+./experiments/problems/block-words   ["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"][0, 1, 2]
+here
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4.csv...
+Inferring goals for trajectory 5, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5.csv...
+Inferring goals for trajectory 6, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6.csv...
+Inferring goals for trajectory 7, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4.csv...
+Inferring goals for trajectory 5, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5.csv...
+Inferring goals for trajectory 6, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6.csv...
+Inferring goals for trajectory 7, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4.csv...
+Inferring goals for trajectory 5, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5.csv...
+Inferring goals for trajectory 6, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6.csv...
+Inferring goals for trajectory 7, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0.csv...
+Inferring goals for trajectory 1, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1.csv...
+Inferring goals for trajectory 2, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2.csv...
+Inferring goals for trajectory 3, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3.csv...
+Inferring goals for trajectory 4, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4.csv...
+Inferring goals for trajectory 5, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5.csv...
+Inferring goals for trajectory 6, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6.csv...
+Inferring goals for trajectory 7, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+ignoring problem1
+ignoring problem2
+domain summary function calledWriting domain summary results to block-words_summary.csv...
+["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"]
+[0, 1, 2]
+./experiments/problems/block-words   ["block-words_problem_0.pddl", "block-words_problem_1.pddl", "block-words_problem_2.pddl"][0, 1, 2]
+here
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(w), stack(w, k), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(w), stack(w, k), pick-up(r), stack(r, o)], [pick-up(t), stack(t, e), pick-up(w), stack(w, k), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(t), stack(t, e), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(t), stack(t, e), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), unstack(o, n), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), unstack(s, t), stack(s, t), pick-up(p), stack(p, s), unstack(p, s), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), unstack(a, w), put-down(a), unstack(w, k), put-down(w), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(a), stack(a, w), unstack(a, w), stack(a, w), pick-up(t), stack(t, o), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), unstack(t, e), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), unstack(r, o), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(r), stack(r, o), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(r), stack(r, o), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.99Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_1.csv...
+Inferring goals for trajectory 10, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_0.csv...
+Inferring goals for trajectory 11, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_1.csv...
+Inferring goals for trajectory 12, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_0.csv...
+Inferring goals for trajectory 13, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_1.csv...
+Inferring goals for trajectory 14, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_0.csv...
+Inferring goals for trajectory 15, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(w), stack(w, k), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(w), stack(w, k), pick-up(r), stack(r, o)], [pick-up(t), stack(t, e), pick-up(w), stack(w, k), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(t), stack(t, e), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(t), stack(t, e), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), unstack(o, n), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), unstack(s, t), stack(s, t), pick-up(p), stack(p, s), unstack(p, s), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), unstack(a, w), put-down(a), unstack(w, k), put-down(w), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(a), stack(a, w), unstack(a, w), stack(a, w), pick-up(t), stack(t, o), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), unstack(t, e), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), unstack(r, o), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(r), stack(r, o), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(r), stack(r, o), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.95Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_1.csv...
+Inferring goals for trajectory 10, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_0.csv...
+Inferring goals for trajectory 11, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_1.csv...
+Inferring goals for trajectory 12, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_0.csv...
+Inferring goals for trajectory 13, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_1.csv...
+Inferring goals for trajectory 14, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_0.csv...
+Inferring goals for trajectory 15, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(w), stack(w, k), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(w), stack(w, k), pick-up(r), stack(r, o)], [pick-up(t), stack(t, e), pick-up(w), stack(w, k), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(t), stack(t, e), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(t), stack(t, e), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), unstack(o, n), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), unstack(s, t), stack(s, t), pick-up(p), stack(p, s), unstack(p, s), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), unstack(a, w), put-down(a), unstack(w, k), put-down(w), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(a), stack(a, w), unstack(a, w), stack(a, w), pick-up(t), stack(t, o), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), unstack(t, e), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), unstack(r, o), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(r), stack(r, o), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(r), stack(r, o), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.9Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_1.csv...
+Inferring goals for trajectory 10, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_0.csv...
+Inferring goals for trajectory 11, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_1.csv...
+Inferring goals for trajectory 12, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_0.csv...
+Inferring goals for trajectory 13, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_1.csv...
+Inferring goals for trajectory 14, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_0.csv...
+Inferring goals for trajectory 15, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+Running experiments for problem 0...
+init_state StateState(Set(Term[block(t), block(a), block(k), block(o), block(w), block(c), block(s), block(p), block(r), block(h), block(u), block(e), block(n)]), Set(Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]), Dict{Symbol, Any}())
+facts in the init state are:Term[clear(p), clear(c), clear(w), clear(k), eq(h, h), eq(p, p), ontable(r), clear(o), ontable(h), eq(o, o), eq(r, r), ontable(w), clear(t), clear(h), ontable(o), eq(a, a), eq(w, w), clear(n), ontable(e), clear(u), ontable(n), ontable(t), clear(s), eq(t, t), clear(r), ontable(a), ontable(p), clear(a), eq(c, c), eq(s, s), eq(k, k), ontable(s), eq(u, u), ontable(c), eq(n, n), handempty, clear(e), eq(e, e), ontable(u), ontable(k)]
+here
+Vector{Compound}[[pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(w), stack(w, k), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(u), stack(u, n), pick-up(t), stack(t, u)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(t), stack(t, o)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(w), stack(w, k), pick-up(r), stack(r, o)], [pick-up(t), stack(t, e), pick-up(w), stack(w, k), pick-up(o), stack(o, t), pick-up(r), stack(r, o)], [pick-up(w), stack(w, k), pick-up(t), stack(t, e), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(t), stack(t, e), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(w), stack(w, k), pick-up(t), stack(t, o), pick-up(s), stack(s, t), pick-up(p), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), unstack(o, n), stack(o, n), pick-up(t), stack(t, o), pick-up(s), stack(s, t), unstack(s, t), stack(s, t), pick-up(p), stack(p, s), unstack(p, s), stack(p, s), pick-up(a), stack(a, p), pick-up(c), stack(c, a)], [pick-up(n), stack(n, e), pick-up(o), stack(o, n), pick-up(t), stack(t, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), unstack(a, w), put-down(a), unstack(w, k), put-down(w), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(w), stack(w, k), pick-up(o), stack(o, n), pick-up(a), stack(a, w), unstack(a, w), stack(a, w), pick-up(t), stack(t, o), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), unstack(t, e), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(t), stack(t, e), pick-up(o), stack(o, t), pick-up(r), stack(r, o), unstack(r, o), stack(r, o), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(r), stack(r, o), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(h), stack(h, a)], [pick-up(n), stack(n, e), pick-up(u), stack(u, n), pick-up(t), stack(t, u), pick-up(w), stack(w, k), pick-up(a), stack(a, w), pick-up(r), stack(r, o), pick-up(h), stack(h, a)]]
+loaded observation
+Noise is through functionOBS_PARAM_IS
+Term[on(a, h), on(p, n), on(h, s), on(k, p), ontable(h), on(p, s), on(n, w), on(o, h), on(e, u), on(n, a), on(w, u), on(c, t), on(t, o), ontable(p), on(w, k), on(u, h), on(h, o), on(w, s), on(k, c), on(s, u), on(u, u), on(c, w), on(h, n), on(r, p), holding(u), on(o, w), clear(c), on(h, h), on(n, c), on(o, e), on(o, k), on(u, p), on(n, s), on(w, a), on(n, h), on(h, u), on(h, e), on(h, c), on(k, r), on(w, p), on(p, o), on(w, n), on(a, r), holding(a), on(e, n), on(p, u), on(c, c), clear(p), on(n, r), on(s, s), on(o, s), clear(t), clear(u), on(r, s), clear(s), on(t, t), holding(t), on(a, c), on(p, r), on(a, p), on(c, k), on(p, p), on(p, t), on(e, c), on(a, s), on(s, o), clear(h), on(s, w), on(c, r), on(t, a), holding(r), on(s, r), on(t, k), on(t, s), on(w, r), holding(w), on(w, h), holding(h), on(e, w), holding(o), holding(n), on(e, s), on(u, s), ontable(o), on(r, a), clear(r), on(o, r), on(k, a), on(h, k), on(w, e), on(e, k), on(k, n), on(r, r), on(u, n), on(u, e), on(s, p), on(t, w), on(c, n), on(a, e), on(k, s), on(s, c), on(s, t), clear(a), on(p, h), on(e, a), on(e, h), on(u, w), on(a, t), on(c, h), clear(o), on(e, p), on(a, n), on(o, c), on(e, e), on(w, w), on(t, c), ontable(w), clear(n), ontable(n), on(u, r), on(k, h), on(s, e), on(r, c), on(u, k), on(n, p), on(t, u), ontable(k), on(o, n), on(w, c), on(a, k), on(a, o), on(t, r), on(w, o), on(c, s), on(h, t), on(n, u), on(h, a), on(k, o), ontable(t), on(c, e), on(u, a), clear(e), clear(w), on(k, e), on(t, e), on(p, e), on(p, k), on(k, t), on(r, k), on(u, c), holding(s), on(s, a), holding(p), on(c, a), on(o, p), on(t, n), holding(c), on(c, u), on(s, k), on(a, u), handempty, on(r, t), on(c, o), on(r, u), on(k, w), on(e, t), on(n, e), on(n, t), on(r, o), on(u, t), ontable(a), on(k, u), holding(k), on(r, e), on(h, w), on(c, p), on(n, o), on(u, o), on(e, o), on(a, w), on(s, h), on(e, r), on(o, u), on(w, t), holding(e), on(o, o), ontable(s), on(k, k), on(a, a), on(p, a), on(r, w), on(n, n), ontable(e), on(t, h), on(t, p), on(n, k), on(o, a), on(o, t), on(p, w), on(r, h), ontable(c), clear(k), on(p, c), on(s, n), ontable(r), on(r, n), on(h, r), on(h, p), ontable(u)]Results path
+./experiments/results/block-words-0.8Inferring goals for trajectory 0, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_0.csv...
+Inferring goals for trajectory 1, goal 0...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal0_1.csv...
+Inferring goals for trajectory 2, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_0.csv...
+Inferring goals for trajectory 3, goal 1...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal1_1.csv...
+Inferring goals for trajectory 4, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_0.csv...
+Inferring goals for trajectory 5, goal 2...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal2_1.csv...
+Inferring goals for trajectory 6, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_0.csv...
+Inferring goals for trajectory 7, goal 3...
+True goal: and(clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal3_1.csv...
+Inferring goals for trajectory 8, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_0.csv...
+Inferring goals for trajectory 9, goal 4...
+True goal: and(clear(c), ontable(e), on(c, a), on(a, p), on(p, s), on(s, t), on(t, o), on(o, n), on(n, e))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal4_1.csv...
+Inferring goals for trajectory 10, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+Timestep 16
+Timestep 17
+Timestep 18
+Timestep 19
+Timestep 20
+Timestep 21
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_0.csv...
+Inferring goals for trajectory 11, goal 5...
+True goal: and(clear(t), ontable(e), on(t, o), on(o, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal5_1.csv...
+Inferring goals for trajectory 12, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_0.csv...
+Inferring goals for trajectory 13, goal 6...
+True goal: and(clear(r), ontable(e), on(r, o), on(o, t), on(t, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal6_1.csv...
+Inferring goals for trajectory 14, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_0.csv...
+Inferring goals for trajectory 15, goal 7...
+True goal: and(clear(t), ontable(e), on(t, u), on(u, n), on(n, e), clear(h), ontable(k), on(h, a), on(a, w), on(w, k))
+num goals are5
+here in sips function
+in particle filter
+initialize particles
+Timestep 1
+Timestep 2
+Timestep 3
+Timestep 4
+Timestep 5
+Timestep 6
+Timestep 7
+Timestep 8
+Timestep 9
+Timestep 10
+Timestep 11
+Timestep 12
+Timestep 13
+Timestep 14
+Timestep 15
+returning particleshere after particle filter
+Writing results to block-words_problem_0_goal7_1.csv...
+summary results with dataframe input 1
+Writing summary results to block-words_problem_0_summary.csv...
+ignoring problem1
+ignoring problem2
+domain summary function calledWriting domain summary results to block-words_summary.csv...

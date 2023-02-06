@@ -59,11 +59,13 @@ function world_particle_filter(
         ess_threshold::Float64=1/4, update_proposal=nothing,
         priority_fn=w->w*0.75, resample=true, rejuvenate=nothing)
     # Construct choicemaps from observed trajectory
+    println("in particle filter")
     @unpack domain = world_config
     n_obs = length(obs_traj)
     obs_choices = traj_choicemaps(obs_traj, domain, obs_terms;
                                   batch_size=batch_size, offset=delay)
     # Initialize particle filter
+    println("initialize particles")
     world_args = (world_init, world_config)
     argdiffs = (UnknownChange(), NoChange(), NoChange())
     pf_state =  initialize_pf_stratified(world_model, (0, world_args...),
@@ -100,6 +102,7 @@ function world_particle_filter(
         end
     end
     # Return particles and their weights
+    print("returning particles")
     traces, weights = get_traces(pf_state), get_log_norm_weights(pf_state)
     lml_est = logsumexp(get_log_weights(pf_state)) - log(n_particles)
     return traces, weights, lml_est
