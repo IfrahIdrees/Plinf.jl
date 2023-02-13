@@ -1,0 +1,1 @@
+(and  (has_water_kettle kettle_1) (not (switch_kettle kettle_1)))kettle_1) (not (switch_kettle kettle_1)))
